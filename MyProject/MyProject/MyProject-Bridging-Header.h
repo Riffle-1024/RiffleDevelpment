@@ -4,4 +4,7 @@
 
 #import "RIffleBaseViewController.h"
 #import "RiffleBaseModel.h"
+#import "TimerTarget.h"
+#import "UIColor+Hex.h"
+#import "HeadView.h"
 

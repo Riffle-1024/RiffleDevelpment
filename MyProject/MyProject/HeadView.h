@@ -37,6 +37,15 @@ NS_ASSUME_NONNULL_BEGIN
 - (void)stopWave;
 
 
++ (CGMutablePathRef)pathWithCurveType:(int)type WaveHeight:(CGFloat)_waveHeight
+                       ChangePercent:(CGFloat)_changePercent
+                              Height:(CGFloat)_height
+                              Period:(CGFloat)_period
+                               Width:(CGFloat)_width
+                                Peak:(CGFloat)_peak
+                               OffSet:(CGFloat)_offSet
+                                Layer:(CAShapeLayer *)layer;
+
 @end
 
 NS_ASSUME_NONNULL_END

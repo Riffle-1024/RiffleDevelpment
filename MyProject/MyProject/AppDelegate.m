@@ -25,7 +25,7 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
-    [AppDelegate registerAspectsMethod];
+//    [AppDelegate registerAspectsMethod];
 //    [ExceptionManager registerExceptionCallBack];
 //    [ViewController aspect_hookSelector:@selector(viewDidLoad) withOptions:AspectPositionAfter usingBlock:^(id<AspectInfo> aspectInfo) {
 //

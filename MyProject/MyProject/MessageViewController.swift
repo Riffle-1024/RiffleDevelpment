@@ -32,21 +32,55 @@ class MessageViewController: RIffleBaseViewController, UITableViewDelegate, UITa
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.creatTableView()
-        tableView?.reloadData()
+//        self.creatTableView()
+//        tableView?.reloadData()
+//        creatObjcHeadView()
+        creatHeadView()
         
+    }
+    /*
+     headView.firstWaveColor=kHexColor(@"398AE5", 1.0);
+     headView.secondWaveColor=kHexColor(@"398AE5", 0.5);
+     headView.percent = 0.35;
+     headView.speed = 0.05;
+     headView.peak = 8;
+     headView.period=2;
+ //    [self.view addSubview:headView];
+     [headView startWave];*/
+    
+    func creatHeadView() {
+        let headView = SwiftHeadView.init(frame: CGRect(x: 50, y: 120, width: 280, height: 280))
+        headView.firstWaveColor = hexColor(str: "398AE5", alpha: 1.0)
+        headView.secondWaveColor = hexColor(str: "398AE5", alpha: 0.5)
+        headView.percent = 0.35
+        headView.speed = 0.05
+        headView.peak = 8
+        headView.period = 2
+        self.view.addSubview(headView)
+        headView.startWave()
+        
+    }
+    
+    
+    func creatObjcHeadView() {
+        let headView = HeadView.init(frame: CGRect(x: 50, y: 120, width: 280, height: 280))
+        headView.firstWaveColor = hexColor(str: "398AE5", alpha: 1.0)
+        headView.secondWaveColor = hexColor(str: "398AE5", alpha: 0.5)
+        headView.percent = 0.35
+        headView.speed = 0.05
+        headView.peak = 8
+        headView.period = 2
+        self.view.addSubview(headView)
+        headView.startWave()
     }
     
 @objc func creatTableView()
     {
         
-        tableView = UITableView.init(frame: CGRect(x: 0, y: 0, width: ScreenWidth, height: ScreenHeight), style: UITableView.Style.plain)
+        tableView = UITableView.init(frame: CGRect(x: 0, y: 120, width: ScreenWidth, height: ScreenHeight - 120), style: UITableView.Style.plain)
         tableView?.delegate = self
         tableView?.dataSource = self
         self.view.addSubview(tableView!)
-        
-        
-        
     }
 
 

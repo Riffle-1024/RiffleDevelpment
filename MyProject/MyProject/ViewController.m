@@ -36,7 +36,7 @@ typedef void(^CallBack) (void);
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    start : NSLog(@"goto start");
+//    start : NSLog(@"goto start");
     // Do any additional setup after loading the view.
     self.view.backgroundColor = [UIColor whiteColor];
 
@@ -45,16 +45,17 @@ typedef void(^CallBack) (void);
     nextBtn.backgroundColor = [UIColor redColor];
     [self.view addSubview:nextBtn];
 //    goto start;
+
     return;
-    HeadView * headView = [[HeadView alloc] initWithFrame:CGRectMake(50, 300, 280, 280)];
-    headView.firstWaveColor=kHexColor(@"398AE5", 1.0);
-    headView.secondWaveColor=kHexColor(@"398AE5", 0.5);
-    headView.percent = 0.35;
-    headView.speed = 0.05;
-    headView.peak = 8;
-    headView.period=2;
-//    [self.view addSubview:headView];
-    [headView startWave];
+//    HeadView * headView = [[HeadView alloc] initWithFrame:CGRectMake(50, 300, 280, 280)];
+//    headView.firstWaveColor=kHexColor(@"398AE5", 1.0);
+//    headView.secondWaveColor=kHexColor(@"398AE5", 0.5);
+//    headView.percent = 0.35;
+//    headView.speed = 0.05;
+//    headView.peak = 8;
+//    headView.period=2;
+////    [self.view addSubview:headView];
+//    [headView startWave];
     
     
     

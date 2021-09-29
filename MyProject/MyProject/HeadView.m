@@ -148,6 +148,43 @@
 }
 
 
++ (CGMutablePathRef)pathWithCurveType:(int)type WaveHeight:(CGFloat)_waveHeight
+                       ChangePercent:(CGFloat)_changePercent
+                              Height:(CGFloat)_height
+                              Period:(CGFloat)_period
+                               Width:(CGFloat)_width
+                                Peak:(CGFloat)_peak
+                              OffSet:(CGFloat)_offSet
+                               Layer:(CAShapeLayer *)layer
+
+
+{
+
+    _waveHeight = (1 - _changePercent) * _height;
+    CGMutablePathRef mutablePath = CGPathCreateMutable();
+    CGPathMoveToPoint(mutablePath, nil, 0, _waveHeight);
+    CGFloat y;
+    for (CGFloat x = 0.0f; x < _width; x++) {
+        switch (type) {
+            case 0:
+                y = _peak * sin(_period * M_PI / _width * x + _offSet) + _waveHeight;
+                break;
+            case 1:
+                y = _peak * cos(_period * M_PI / _width * x + _offSet) + _waveHeight;
+                break;
+  
+            default:
+                break;
+        }
+        CGPathAddLineToPoint(mutablePath, nil, x, y);
+    }
+    CGPathAddLineToPoint(mutablePath, nil, _width, _height);
+    CGPathAddLineToPoint(mutablePath, nil, 0, _height);
+    CGPathCloseSubpath(mutablePath);
+    layer.path = mutablePath;
+    return mutablePath;
+}
+
 #pragma mark **** 设置默认值
 - (void)setDefaultProperty {
     

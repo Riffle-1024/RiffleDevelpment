@@ -1,0 +1,6 @@
+framework module RIFFLESDK {
+  umbrella header "RIFFLESDK.h"
+
+  export *
+  module * { export * }
+}

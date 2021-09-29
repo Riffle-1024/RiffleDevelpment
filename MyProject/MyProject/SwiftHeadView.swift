@@ -177,11 +177,11 @@ class SwiftHeadView: UIView {
             case .mCurveTypeCos:
                 y = peak! * cos(period! * CGFloat.pi / _width! * CGFloat(x) + _offset!) + _waveHeight!
             }
-            mutablePath.addLine(to: CGPoint.init(x: CGFloat(x), y: CGFloat(y)))
+            mutablePath.addLine(to: CGPoint(x: CGFloat(x), y: CGFloat(y)))
         }
 
-        mutablePath.addLine(to: CGPoint.init(x: _width!, y: _height!))
-        mutablePath.addLine(to: CGPoint.init(x: 0, y: _height!))
+        mutablePath.addLine(to: CGPoint(x: _width!, y: _height!))
+        mutablePath.addLine(to: CGPoint(x: 0, y: _height!))
         mutablePath.closeSubpath();
         return mutablePath
     }

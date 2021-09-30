@@ -20,7 +20,7 @@ let mWATERWAVE_DEFAULT_SPEED = 0.1
 
 let mWATERWAVE_DEFAULT_PEAK = 6.0
 
-let mWATERWAVE_DEFAULT_PERIOD = 1.2
+let mWATERWAVE_DEFAULT_PERIOD = 2.0
 
 func hexColor(str:String,alpha:CGFloat) -> UIColor
 {

@@ -25,6 +25,7 @@
 		FBC471CD2702E49700672063 /* RiffleBaseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = FBC471CC2702E49700672063 /* RiffleBaseModel.m */; };
 		FBC471D02702EF3900672063 /* SwiftHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBC471CF2702EF3900672063 /* SwiftHeader.swift */; };
 		FBC471D2270314B900672063 /* SwiftHeadView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBC471D1270314B900672063 /* SwiftHeadView.swift */; };
+		FBC471D427055A9C00672063 /* SwiftPathHeadView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBC471D327055A9C00672063 /* SwiftPathHeadView.swift */; };
 		FBE1621726EAEDA000E0C8AE /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FBE1621626EAEDA000E0C8AE /* HomeViewController.m */; };
 		FBE1621C26EEF8ED00E0C8AE /* Aspects.plist in Resources */ = {isa = PBXBuildFile; fileRef = FBE1621B26EEF8ED00E0C8AE /* Aspects.plist */; };
 		FBE1621F26EEFD1000E0C8AE /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FBE1621E26EEFD1000E0C8AE /* MainViewController.m */; };
@@ -91,6 +92,7 @@
 		FBC471CE2702EB8000672063 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		FBC471CF2702EF3900672063 /* SwiftHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftHeader.swift; sourceTree = "<group>"; };
 		FBC471D1270314B900672063 /* SwiftHeadView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftHeadView.swift; sourceTree = "<group>"; };
+		FBC471D327055A9C00672063 /* SwiftPathHeadView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftPathHeadView.swift; sourceTree = "<group>"; };
 		FBE1621526EAEDA000E0C8AE /* HomeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
 		FBE1621626EAEDA000E0C8AE /* HomeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
 		FBE1621B26EEF8ED00E0C8AE /* Aspects.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Aspects.plist; sourceTree = "<group>"; };
@@ -215,6 +217,7 @@
 				FBC471CC2702E49700672063 /* RiffleBaseModel.m */,
 				FBC471CE2702EB8000672063 /* PrefixHeader.pch */,
 				FBC471D1270314B900672063 /* SwiftHeadView.swift */,
+				FBC471D327055A9C00672063 /* SwiftPathHeadView.swift */,
 				FBC471C92702E3C800672063 /* MessageViewController.swift */,
 				FBC471CF2702EF3900672063 /* SwiftHeader.swift */,
 				FBC471C62702E32800672063 /* RIffleBaseViewController.h */,
@@ -439,6 +442,7 @@
 				FBFD2A6626F1E1D00087A81F /* MyCommondTool.m in Sources */,
 				FB5AD27226E6182500040297 /* main.m in Sources */,
 				FB5AD26426E6182200040297 /* SceneDelegate.m in Sources */,
+				FBC471D427055A9C00672063 /* SwiftPathHeadView.swift in Sources */,
 				FBFD2AFF26FC4C3E0087A81F /* UIScrollView+Extend.m in Sources */,
 				FBC471CA2702E3C800672063 /* MessageViewController.swift in Sources */,
 				FBE1621726EAEDA000E0C8AE /* HomeViewController.m in Sources */,

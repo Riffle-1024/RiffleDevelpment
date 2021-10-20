@@ -63,13 +63,12 @@ class MessageViewController: RIffleBaseViewController, UITableViewDelegate, UITa
     }
     
     func creatPathHeadView() {
-        let headView = SwiftPathHeadView.init(frame: CGRect(x: 50, y: 120, width: 280, height: 280))
-        headView.firstWaveColor = hexColor(str: "398AE5", alpha: 1.0)
-        headView.secondWaveColor = hexColor(str: "398AE5", alpha: 0.5)
+        let headView = SwiftWaveView.init(frame: CGRect(x: 50, y: 120, width: 280, height: 280))
+        headView.waveColor = hexColor(str: "398AE5", alpha: 1.0)
+        headView.maskColor = hexColor(str: "398AE5", alpha: 0.5)
         headView.percent = 0.35
-        headView.speed = 0.05
+        headView.waveSpeed = 0.05
         headView.peak = 8
-        headView.period = 2
         self.view.addSubview(headView)
         headView.startWave()
         

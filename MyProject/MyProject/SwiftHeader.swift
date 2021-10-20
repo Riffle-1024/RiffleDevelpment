@@ -22,6 +22,11 @@ let mWATERWAVE_DEFAULT_PEAK = 6.0
 
 let mWATERWAVE_DEFAULT_PERIOD = 2.0
 
+func colorWithAlpha(red:CGFloat,green:CGFloat,blue:CGFloat,alpha:CGFloat) -> UIColor
+{
+    return UIColor.init(red: red/255.0, green: green/255.0, blue: blue/255.0, alpha: alpha)
+}
+
 func hexColor(str:String,alpha:CGFloat) -> UIColor
 {
     return UIColor.init(hexString: str, alpha: alpha)

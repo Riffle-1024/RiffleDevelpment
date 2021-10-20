@@ -7,4 +7,5 @@ pod 'SDWebImage', '~> 5.11.1'
 pod 'Aspects', '~> 1.4.1'
 pod 'RiffleTest2', :git => "https://github.com/Riffle-1024/RiffleTest2.git"
 pod 'MJRefresh','~> 3.7.2'
+pod 'ZipArchive'
 end

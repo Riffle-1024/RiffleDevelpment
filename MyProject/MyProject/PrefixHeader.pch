@@ -14,4 +14,6 @@
 
 
 #import "MyProject-Swift.h"
+
+#import "RIffleBaseViewController.h"
 #endif /* PrefixHeader_pch */

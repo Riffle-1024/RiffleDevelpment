@@ -26,9 +26,19 @@
 		FBC471D02702EF3900672063 /* SwiftHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBC471CF2702EF3900672063 /* SwiftHeader.swift */; };
 		FBC471D2270314B900672063 /* SwiftHeadView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBC471D1270314B900672063 /* SwiftHeadView.swift */; };
 		FBC471D427055A9C00672063 /* SwiftPathHeadView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBC471D327055A9C00672063 /* SwiftPathHeadView.swift */; };
+		FBC471DA270596AC00672063 /* WaterWaveView.m in Sources */ = {isa = PBXBuildFile; fileRef = FBC471D9270596AC00672063 /* WaterWaveView.m */; };
+		FBC471DF2705B0DC00672063 /* SwiftWaveView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBC471DE2705B0DC00672063 /* SwiftWaveView.swift */; };
+		FBC471E12708266900672063 /* SwiftRippleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBC471E02708266900672063 /* SwiftRippleView.swift */; };
+		FBD5F5AF27167F6700449608 /* RiffleTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = FBD5F5AE27167F6700449608 /* RiffleTabBarController.m */; };
+		FBD5F5B22716816B00449608 /* NSArray+Addtion.m in Sources */ = {isa = PBXBuildFile; fileRef = FBD5F5B12716816B00449608 /* NSArray+Addtion.m */; };
+		FBD5F5B5271681E100449608 /* RiffleForeTabViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FBD5F5B4271681E100449608 /* RiffleForeTabViewController.m */; };
+		FBD5F5C42716B18500449608 /* index.html in Resources */ = {isa = PBXBuildFile; fileRef = FBD5F5C32716B18500449608 /* index.html */; };
+		FBD5F5C62716B26900449608 /* Html in Resources */ = {isa = PBXBuildFile; fileRef = FBD5F5C52716B26900449608 /* Html */; };
+		FBD5F600271EC05F00449608 /* RiffleDownManager.m in Sources */ = {isa = PBXBuildFile; fileRef = FBD5F5FF271EC05F00449608 /* RiffleDownManager.m */; };
 		FBE1621726EAEDA000E0C8AE /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FBE1621626EAEDA000E0C8AE /* HomeViewController.m */; };
 		FBE1621C26EEF8ED00E0C8AE /* Aspects.plist in Resources */ = {isa = PBXBuildFile; fileRef = FBE1621B26EEF8ED00E0C8AE /* Aspects.plist */; };
 		FBE1621F26EEFD1000E0C8AE /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FBE1621E26EEFD1000E0C8AE /* MainViewController.m */; };
+		FBF644A7271419A90042733C /* test.html in Resources */ = {isa = PBXBuildFile; fileRef = FBF644A6271419A90042733C /* test.html */; };
 		FBFD2A6626F1E1D00087A81F /* MyCommondTool.m in Sources */ = {isa = PBXBuildFile; fileRef = FBFD2A6526F1E1D00087A81F /* MyCommondTool.m */; };
 		FBFD2AE526F1F6E50087A81F /* RiffleFontTool.m in Sources */ = {isa = PBXBuildFile; fileRef = FBFD2AE426F1F6E50087A81F /* RiffleFontTool.m */; };
 		FBFD2AED26FAD2AF0087A81F /* HeadView.m in Sources */ = {isa = PBXBuildFile; fileRef = FBFD2AEC26FAD2AF0087A81F /* HeadView.m */; };
@@ -93,11 +103,26 @@
 		FBC471CF2702EF3900672063 /* SwiftHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftHeader.swift; sourceTree = "<group>"; };
 		FBC471D1270314B900672063 /* SwiftHeadView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftHeadView.swift; sourceTree = "<group>"; };
 		FBC471D327055A9C00672063 /* SwiftPathHeadView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftPathHeadView.swift; sourceTree = "<group>"; };
+		FBC471D8270596AC00672063 /* WaterWaveView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WaterWaveView.h; sourceTree = "<group>"; };
+		FBC471D9270596AC00672063 /* WaterWaveView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WaterWaveView.m; sourceTree = "<group>"; };
+		FBC471DE2705B0DC00672063 /* SwiftWaveView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftWaveView.swift; sourceTree = "<group>"; };
+		FBC471E02708266900672063 /* SwiftRippleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftRippleView.swift; sourceTree = "<group>"; };
+		FBD5F5AD27167F6700449608 /* RiffleTabBarController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RiffleTabBarController.h; sourceTree = "<group>"; };
+		FBD5F5AE27167F6700449608 /* RiffleTabBarController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RiffleTabBarController.m; sourceTree = "<group>"; };
+		FBD5F5B02716816B00449608 /* NSArray+Addtion.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSArray+Addtion.h"; sourceTree = "<group>"; };
+		FBD5F5B12716816B00449608 /* NSArray+Addtion.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSArray+Addtion.m"; sourceTree = "<group>"; };
+		FBD5F5B3271681E100449608 /* RiffleForeTabViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RiffleForeTabViewController.h; sourceTree = "<group>"; };
+		FBD5F5B4271681E100449608 /* RiffleForeTabViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RiffleForeTabViewController.m; sourceTree = "<group>"; };
+		FBD5F5C32716B18500449608 /* index.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = index.html; sourceTree = "<group>"; };
+		FBD5F5C52716B26900449608 /* Html */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Html; sourceTree = "<group>"; };
+		FBD5F5FE271EC05F00449608 /* RiffleDownManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RiffleDownManager.h; sourceTree = "<group>"; };
+		FBD5F5FF271EC05F00449608 /* RiffleDownManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RiffleDownManager.m; sourceTree = "<group>"; };
 		FBE1621526EAEDA000E0C8AE /* HomeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
 		FBE1621626EAEDA000E0C8AE /* HomeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
 		FBE1621B26EEF8ED00E0C8AE /* Aspects.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Aspects.plist; sourceTree = "<group>"; };
 		FBE1621D26EEFD1000E0C8AE /* MainViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
 		FBE1621E26EEFD1000E0C8AE /* MainViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+		FBF644A6271419A90042733C /* test.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = test.html; sourceTree = "<group>"; };
 		FBFD2A6426F1E1D00087A81F /* MyCommondTool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyCommondTool.h; sourceTree = "<group>"; };
 		FBFD2A6526F1E1D00087A81F /* MyCommondTool.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyCommondTool.m; sourceTree = "<group>"; };
 		FBFD2AE026F1EF0D0087A81F /* RIFFLESDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = RIFFLESDK.framework; sourceTree = "<group>"; };
@@ -183,6 +208,8 @@
 		FB5AD25E26E6182200040297 /* MyProject */ = {
 			isa = PBXGroup;
 			children = (
+				FBD5F5C52716B26900449608 /* Html */,
+				FBD5F5C22716B18500449608 /* HtmlFile */,
 				FB5AD25F26E6182200040297 /* AppDelegate.h */,
 				FB5AD26026E6182200040297 /* AppDelegate.m */,
 				FB5AD26226E6182200040297 /* SceneDelegate.h */,
@@ -205,6 +232,8 @@
 				FBFD2AE426F1F6E50087A81F /* RiffleFontTool.m */,
 				FBFD2AEB26FAD2AF0087A81F /* HeadView.h */,
 				FBFD2AEC26FAD2AF0087A81F /* HeadView.m */,
+				FBC471D8270596AC00672063 /* WaterWaveView.h */,
+				FBC471D9270596AC00672063 /* WaterWaveView.m */,
 				FBFD2AF426FAF8C50087A81F /* RippleView.h */,
 				FBFD2AF526FAF8C50087A81F /* RippleView.m */,
 				FBFD2AEE26FAD31E0087A81F /* TimerTarget.h */,
@@ -215,11 +244,22 @@
 				FBFD2AFE26FC4C3D0087A81F /* UIScrollView+Extend.m */,
 				FBC471CB2702E49700672063 /* RiffleBaseModel.h */,
 				FBC471CC2702E49700672063 /* RiffleBaseModel.m */,
+				FBD5F5B02716816B00449608 /* NSArray+Addtion.h */,
+				FBD5F5B12716816B00449608 /* NSArray+Addtion.m */,
+				FBD5F5AD27167F6700449608 /* RiffleTabBarController.h */,
+				FBD5F5AE27167F6700449608 /* RiffleTabBarController.m */,
+				FBD5F5B3271681E100449608 /* RiffleForeTabViewController.h */,
+				FBD5F5B4271681E100449608 /* RiffleForeTabViewController.m */,
+				FBD5F5FE271EC05F00449608 /* RiffleDownManager.h */,
+				FBD5F5FF271EC05F00449608 /* RiffleDownManager.m */,
 				FBC471CE2702EB8000672063 /* PrefixHeader.pch */,
+				FBC471E02708266900672063 /* SwiftRippleView.swift */,
 				FBC471D1270314B900672063 /* SwiftHeadView.swift */,
+				FBC471DE2705B0DC00672063 /* SwiftWaveView.swift */,
 				FBC471D327055A9C00672063 /* SwiftPathHeadView.swift */,
 				FBC471C92702E3C800672063 /* MessageViewController.swift */,
 				FBC471CF2702EF3900672063 /* SwiftHeader.swift */,
+				FBF644A6271419A90042733C /* test.html */,
 				FBC471C62702E32800672063 /* RIffleBaseViewController.h */,
 				FBC471C72702E32800672063 /* RIffleBaseViewController.m */,
 				FB5AD26826E6182200040297 /* Main.storyboard */,
@@ -250,6 +290,14 @@
 				FB5AD28826E6182500040297 /* Info.plist */,
 			);
 			path = MyProjectUITests;
+			sourceTree = "<group>";
+		};
+		FBD5F5C22716B18500449608 /* HtmlFile */ = {
+			isa = PBXGroup;
+			children = (
+				FBD5F5C32716B18500449608 /* index.html */,
+			);
+			path = HtmlFile;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -360,6 +408,9 @@
 				FB5AD26F26E6182500040297 /* LaunchScreen.storyboard in Resources */,
 				FB5AD26C26E6182500040297 /* Assets.xcassets in Resources */,
 				FBE1621C26EEF8ED00E0C8AE /* Aspects.plist in Resources */,
+				FBD5F5C62716B26900449608 /* Html in Resources */,
+				FBD5F5C42716B18500449608 /* index.html in Resources */,
+				FBF644A7271419A90042733C /* test.html in Resources */,
 				FB5AD26A26E6182200040297 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -427,7 +478,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FBD5F5B22716816B00449608 /* NSArray+Addtion.m in Sources */,
 				FBC471CD2702E49700672063 /* RiffleBaseModel.m in Sources */,
+				FBD5F5AF27167F6700449608 /* RiffleTabBarController.m in Sources */,
 				FB5AD26726E6182200040297 /* ViewController.m in Sources */,
 				FBC471D02702EF3900672063 /* SwiftHeader.swift in Sources */,
 				FB5AD26126E6182200040297 /* AppDelegate.m in Sources */,
@@ -439,10 +492,15 @@
 				FBFD2AE526F1F6E50087A81F /* RiffleFontTool.m in Sources */,
 				FBE1621F26EEFD1000E0C8AE /* MainViewController.m in Sources */,
 				FBC471D2270314B900672063 /* SwiftHeadView.swift in Sources */,
+				FBD5F5B5271681E100449608 /* RiffleForeTabViewController.m in Sources */,
+				FBC471DA270596AC00672063 /* WaterWaveView.m in Sources */,
+				FBD5F600271EC05F00449608 /* RiffleDownManager.m in Sources */,
 				FBFD2A6626F1E1D00087A81F /* MyCommondTool.m in Sources */,
 				FB5AD27226E6182500040297 /* main.m in Sources */,
+				FBC471E12708266900672063 /* SwiftRippleView.swift in Sources */,
 				FB5AD26426E6182200040297 /* SceneDelegate.m in Sources */,
 				FBC471D427055A9C00672063 /* SwiftPathHeadView.swift in Sources */,
+				FBC471DF2705B0DC00672063 /* SwiftWaveView.swift in Sources */,
 				FBFD2AFF26FC4C3E0087A81F /* UIScrollView+Extend.m in Sources */,
 				FBC471CA2702E3C800672063 /* MessageViewController.swift in Sources */,
 				FBE1621726EAEDA000E0C8AE /* HomeViewController.m in Sources */,

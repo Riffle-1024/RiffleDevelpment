@@ -7,11 +7,7 @@
 
 #import <UIKit/UIKit.h>
 
-typedef NS_ENUM(NSInteger ,mCurveType) {
-    
-    mCurveTypeSin, // 正选
-    mCurveTypeCos  // 余弦
-};
+
 
 
 NS_ASSUME_NONNULL_BEGIN

@@ -14,7 +14,11 @@
 #define mWATERWAVE_DEFAULT_SPEED 0.1;
 #define mWATERWAVE_DEFAULT_PEAK  6.0
 #define mWATERWAVE_DEFAULT_PERIOD 1.2
-
+typedef NS_ENUM(NSInteger ,mCurveType) {
+    
+    mCurveTypeSin, // 正选
+    mCurveTypeCos  // 余弦
+};
 
 @interface HeadView ()
 {

@@ -19,6 +19,13 @@
 		FB5AD27226E6182500040297 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FB5AD27126E6182500040297 /* main.m */; };
 		FB5AD27C26E6182500040297 /* MyProjectTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FB5AD27B26E6182500040297 /* MyProjectTests.m */; };
 		FB5AD28726E6182500040297 /* MyProjectUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = FB5AD28626E6182500040297 /* MyProjectUITests.m */; };
+		FB792B2E273A1D91004525A5 /* TestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FB792B2D273A1D91004525A5 /* TestViewController.m */; };
+		FB948FB2273220CE0056B3D2 /* XibShowView.m in Sources */ = {isa = PBXBuildFile; fileRef = FB948FB1273220CE0056B3D2 /* XibShowView.m */; };
+		FB948FB4273221870056B3D2 /* XibShowView.xib in Resources */ = {isa = PBXBuildFile; fileRef = FB948FB3273221870056B3D2 /* XibShowView.xib */; };
+		FB948FB6273229910056B3D2 /* SwiftCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB948FB5273229910056B3D2 /* SwiftCollectionViewController.swift */; };
+		FB948FBC27322A550056B3D2 /* CollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FB948FBA27322A550056B3D2 /* CollectionViewCell.m */; };
+		FB948FBD27322A550056B3D2 /* CollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FB948FBB27322A550056B3D2 /* CollectionViewCell.xib */; };
+		FB948FC4273375210056B3D2 /* RiffleCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FB948FC3273375210056B3D2 /* RiffleCollectionViewController.m */; };
 		FBA8AEBB26EF1B790044860F /* AspectsTool.m in Sources */ = {isa = PBXBuildFile; fileRef = FBA8AEBA26EF1B790044860F /* AspectsTool.m */; };
 		FBC471C82702E32800672063 /* RIffleBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FBC471C72702E32800672063 /* RIffleBaseViewController.m */; };
 		FBC471CA2702E3C800672063 /* MessageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBC471C92702E3C800672063 /* MessageViewController.swift */; };
@@ -69,6 +76,7 @@
 		E119F767096EA9B257097D9A /* Pods-MyProject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyProject.release.xcconfig"; path = "Target Support Files/Pods-MyProject/Pods-MyProject.release.xcconfig"; sourceTree = "<group>"; };
 		ECF1AF520824CED246F334C0 /* libPods-MyProject.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MyProject.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F6C1264F7D6DE4B8A6EA0BEF /* Pods-MyProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyProject.debug.xcconfig"; path = "Target Support Files/Pods-MyProject/Pods-MyProject.debug.xcconfig"; sourceTree = "<group>"; };
+		FB14FE182728EF5400B6F7CB /* CommonProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CommonProtocol.h; sourceTree = "<group>"; };
 		FB592C0C26E85662003C7DFD /* ExceptionManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ExceptionManager.h; sourceTree = "<group>"; };
 		FB592C0D26E85662003C7DFD /* ExceptionManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ExceptionManager.m; sourceTree = "<group>"; };
 		FB592C0F26E864CE003C7DFD /* CustomeBtn.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CustomeBtn.h; sourceTree = "<group>"; };
@@ -91,6 +99,17 @@
 		FB5AD28226E6182500040297 /* MyProjectUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyProjectUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FB5AD28626E6182500040297 /* MyProjectUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyProjectUITests.m; sourceTree = "<group>"; };
 		FB5AD28826E6182500040297 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FB792B2C273A1D90004525A5 /* TestViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestViewController.h; sourceTree = "<group>"; };
+		FB792B2D273A1D91004525A5 /* TestViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestViewController.m; sourceTree = "<group>"; };
+		FB948FB0273220CE0056B3D2 /* XibShowView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XibShowView.h; sourceTree = "<group>"; };
+		FB948FB1273220CE0056B3D2 /* XibShowView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XibShowView.m; sourceTree = "<group>"; };
+		FB948FB3273221870056B3D2 /* XibShowView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = XibShowView.xib; sourceTree = "<group>"; };
+		FB948FB5273229910056B3D2 /* SwiftCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftCollectionViewController.swift; sourceTree = "<group>"; };
+		FB948FB927322A550056B3D2 /* CollectionViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CollectionViewCell.h; sourceTree = "<group>"; };
+		FB948FBA27322A550056B3D2 /* CollectionViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CollectionViewCell.m; sourceTree = "<group>"; };
+		FB948FBB27322A550056B3D2 /* CollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CollectionViewCell.xib; sourceTree = "<group>"; };
+		FB948FC2273375210056B3D2 /* RiffleCollectionViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RiffleCollectionViewController.h; sourceTree = "<group>"; };
+		FB948FC3273375210056B3D2 /* RiffleCollectionViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RiffleCollectionViewController.m; sourceTree = "<group>"; };
 		FBA8AEB926EF1B790044860F /* AspectsTool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AspectsTool.h; sourceTree = "<group>"; };
 		FBA8AEBA26EF1B790044860F /* AspectsTool.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AspectsTool.m; sourceTree = "<group>"; };
 		FBC471C32702E25C00672063 /* MyProject-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MyProject-Bridging-Header.h"; sourceTree = "<group>"; };
@@ -250,18 +269,30 @@
 				FBD5F5AE27167F6700449608 /* RiffleTabBarController.m */,
 				FBD5F5B3271681E100449608 /* RiffleForeTabViewController.h */,
 				FBD5F5B4271681E100449608 /* RiffleForeTabViewController.m */,
+				FB948FC2273375210056B3D2 /* RiffleCollectionViewController.h */,
+				FB948FC3273375210056B3D2 /* RiffleCollectionViewController.m */,
 				FBD5F5FE271EC05F00449608 /* RiffleDownManager.h */,
 				FBD5F5FF271EC05F00449608 /* RiffleDownManager.m */,
 				FBC471CE2702EB8000672063 /* PrefixHeader.pch */,
+				FB948FB927322A550056B3D2 /* CollectionViewCell.h */,
+				FB948FBA27322A550056B3D2 /* CollectionViewCell.m */,
+				FB948FBB27322A550056B3D2 /* CollectionViewCell.xib */,
+				FB948FB0273220CE0056B3D2 /* XibShowView.h */,
+				FB948FB1273220CE0056B3D2 /* XibShowView.m */,
+				FB948FB3273221870056B3D2 /* XibShowView.xib */,
 				FBC471E02708266900672063 /* SwiftRippleView.swift */,
 				FBC471D1270314B900672063 /* SwiftHeadView.swift */,
 				FBC471DE2705B0DC00672063 /* SwiftWaveView.swift */,
 				FBC471D327055A9C00672063 /* SwiftPathHeadView.swift */,
 				FBC471C92702E3C800672063 /* MessageViewController.swift */,
+				FB948FB5273229910056B3D2 /* SwiftCollectionViewController.swift */,
 				FBC471CF2702EF3900672063 /* SwiftHeader.swift */,
 				FBF644A6271419A90042733C /* test.html */,
 				FBC471C62702E32800672063 /* RIffleBaseViewController.h */,
 				FBC471C72702E32800672063 /* RIffleBaseViewController.m */,
+				FB792B2C273A1D90004525A5 /* TestViewController.h */,
+				FB792B2D273A1D91004525A5 /* TestViewController.m */,
+				FB14FE182728EF5400B6F7CB /* CommonProtocol.h */,
 				FB5AD26826E6182200040297 /* Main.storyboard */,
 				FB5AD26B26E6182500040297 /* Assets.xcassets */,
 				FB5AD26D26E6182500040297 /* LaunchScreen.storyboard */,
@@ -412,6 +443,8 @@
 				FBD5F5C42716B18500449608 /* index.html in Resources */,
 				FBF644A7271419A90042733C /* test.html in Resources */,
 				FB5AD26A26E6182200040297 /* Main.storyboard in Resources */,
+				FB948FB4273221870056B3D2 /* XibShowView.xib in Resources */,
+				FB948FBD27322A550056B3D2 /* CollectionViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -490,7 +523,10 @@
 				FBA8AEBB26EF1B790044860F /* AspectsTool.m in Sources */,
 				FB592C0E26E85663003C7DFD /* ExceptionManager.m in Sources */,
 				FBFD2AE526F1F6E50087A81F /* RiffleFontTool.m in Sources */,
+				FB792B2E273A1D91004525A5 /* TestViewController.m in Sources */,
 				FBE1621F26EEFD1000E0C8AE /* MainViewController.m in Sources */,
+				FB948FC4273375210056B3D2 /* RiffleCollectionViewController.m in Sources */,
+				FB948FB2273220CE0056B3D2 /* XibShowView.m in Sources */,
 				FBC471D2270314B900672063 /* SwiftHeadView.swift in Sources */,
 				FBD5F5B5271681E100449608 /* RiffleForeTabViewController.m in Sources */,
 				FBC471DA270596AC00672063 /* WaterWaveView.m in Sources */,
@@ -499,6 +535,7 @@
 				FB5AD27226E6182500040297 /* main.m in Sources */,
 				FBC471E12708266900672063 /* SwiftRippleView.swift in Sources */,
 				FB5AD26426E6182200040297 /* SceneDelegate.m in Sources */,
+				FB948FBC27322A550056B3D2 /* CollectionViewCell.m in Sources */,
 				FBC471D427055A9C00672063 /* SwiftPathHeadView.swift in Sources */,
 				FBC471DF2705B0DC00672063 /* SwiftWaveView.swift in Sources */,
 				FBFD2AFF26FC4C3E0087A81F /* UIScrollView+Extend.m in Sources */,
@@ -506,6 +543,7 @@
 				FBE1621726EAEDA000E0C8AE /* HomeViewController.m in Sources */,
 				FBFD2AF326FADA4F0087A81F /* UIColor+Hex.m in Sources */,
 				FB592C1126E864CE003C7DFD /* CustomeBtn.m in Sources */,
+				FB948FB6273229910056B3D2 /* SwiftCollectionViewController.swift in Sources */,
 				FBFD2AF026FAD31E0087A81F /* TimerTarget.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

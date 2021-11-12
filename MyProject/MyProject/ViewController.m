@@ -16,6 +16,8 @@
 #import "RippleView.h"
 #import "WaterWaveView.h"
 #import <WebKit/WebKit.h>
+#import "XibShowView.h"
+#import "RiffleCollectionViewController.h"
 
 #define kHexColor(a,b) [UIColor colorWithHexString:a alpha:b]
 #define JSMessageName_PrivacyPolicy @"jumpPrivacyPolicy"
@@ -29,6 +31,10 @@ typedef void(^CallBack) (void);
 
 @property(nonatomic,strong)WKWebView *webView;
 
+
+@property(nonatomic,copy) NSString * startTime;
+@property(nonatomic,copy) NSString * endTime;
+
 @end
 
 @implementation ViewController
@@ -38,10 +44,25 @@ typedef void(^CallBack) (void);
     //    NSLog(@"[ViewController load]");
 }
 
+-(void)getDateWithComplete:(void(^)(NSString * message))comPlete
+{
+    
+}
 - (void)viewDidLoad {
     [super viewDidLoad];
     //    start : NSLog(@"goto start");
     // Do any additional setup after loading the view.
+//    self.startTime = [self getCurrentHourAndMinuteTime];
+//    [self moveDiskAmount:7 Object1:@"A" Object2:@"B" Object3:@"C"];
+//    self.endTime = [self getCurrentHourAndMinuteTime];
+//    double diffentTime = [self getTimeDifferenceWithStartTime:self.startTime andEndTime:self.endTime];
+//    NSLog(@"汉诺塔执行时间：%lf秒",diffentTime/1000);
+    
+//    XibShowView * showView = [[[NSBundle mainBundle] loadNibNamed:@"XibShowView" owner:self options:nil] lastObject];
+//    showView.frame  = CGRectMake(10, 200, 300, 400);
+//    [self.view addSubview:showView];
+//    
+//    return;
     self.view.backgroundColor = [UIColor whiteColor];
     
     UIButton * nextBtn = [[UIButton alloc] initWithFrame:CGRectMake(100, 100, 100, 30)];
@@ -135,6 +156,11 @@ typedef void(^CallBack) (void);
     NSLog(@"------:%@",[ViewController convertBinarySystemFromDecimalSystem:[NSString stringWithFormat:@"%d",cc]]);
     int ee = 1 << 4;
     NSLog(@"------:%d",ee);
+    
+    void(^block)(NSString * string) = ^(NSString *string){
+        
+    };
+    
 }
 
 
@@ -174,25 +200,28 @@ typedef void(^CallBack) (void);
 - (void)nextVC
 {
     
-    //    HomeViewController * homeVC = [[HomeViewController alloc] init];
-    //    [self.navigationController pushViewController:homeVC animated:YES];
-    //    MessageViewController * messageVC = [[MessageViewController alloc] init];
-    //    [self.navigationController pushViewController:messageVC animated:YES];
-    
+//        HomeViewController * homeVC = [[HomeViewController alloc] init];
+//        [self.navigationController pushViewController:homeVC animated:YES];
+//        MessageViewController * messageVC = [[MessageViewController alloc] init];
+//        [self.navigationController pushViewController:messageVC animated:YES];
+//    RiffleCollectionViewController * vc = [[RiffleCollectionViewController alloc] init];
+//    [self.navigationController pushViewController:vc animated:YES];
+    SwiftCollectionViewController * collectionVC = [[SwiftCollectionViewController alloc] init];
+    [self.navigationController pushViewController:collectionVC animated:YES];
     // 1. webview调用JS函数, JS代码可根据需要拼接好。
     // 此处是设置需要调用的js方法以及将对应的参数传入，需要以字符串的形式
     // 带参数
-    NSString *jsFounction = [NSString stringWithFormat:@"callJS('%@')", @"UserProtocol"];
+//    NSString *jsFounction = [NSString stringWithFormat:@"callJS('%@')", @"UserProtocol"];
     // 不带参数
     //    NSString *jsFounction = [NSString stringWithFormat:@"jumpUserProtocol()"];
     // 调用API方法
-    [self.webView evaluateJavaScript:jsFounction completionHandler:^(id _Nullable result, NSError * _Nullable error) {
-        if (error) {
-            NSLog(@"evaluateJavaScript:\n result = %@ error = %@",result, error);
-        }else{
-            NSLog(@"调用成功");
-        }
-    }];
+//    [self.webView evaluateJavaScript:jsFounction completionHandler:^(id _Nullable result, NSError * _Nullable error) {
+//        if (error) {
+//            NSLog(@"evaluateJavaScript:\n result = %@ error = %@",result, error);
+//        }else{
+//            NSLog(@"调用成功");
+//        }
+//    }];
 }
 - (void)expectionTest
 {
@@ -414,5 +443,49 @@ void __sanitizer_cov_trace_pc_guard(uint32_t *guard) {
             
         }];
     }
+}
+
+
+
+-(void)moveDiskAmount:(NSInteger )amount Object1:(NSString *)object1 Object2:(NSString *)object2 Object3:(NSString *)object3{
+    if (amount == 1) {
+        [self moveOject1:object1 toObject3:object3];
+    }else{
+        [self moveDiskAmount:amount - 1 Object1:object1 Object2:object3 Object3:object2];
+        [self moveOject1:object1 toObject3:object3];
+        [self moveDiskAmount:amount - 1 Object1:object2 Object2:object1 Object3:object3];
+    }
+}
+
+-(void)moveOject1:(NSString *)object1 toObject3:(NSString *)object3{
+    NSLog(@"%@——>%@",object1,object3);
+}
+
+//获取当前时间
+-(NSString * )getCurrentHourAndMinuteTime{
+    NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
+    // 设置想要的格式，hh与HH的区别:分别表示12小时制,24小时制
+    [formatter setDateFormat:@"yyyyMMddHHmmssSSS"];
+    NSDate *dateNow = [NSDate date];
+    //把NSDate按formatter格式转成NSString
+    NSString *currentTime = [formatter stringFromDate:dateNow];
+    return currentTime;
+    
+}
+
+//获取两个时间点的时间差，精确到毫秒
+-(double )getTimeDifferenceWithStartTime:(NSString * )startTime andEndTime:(NSString *)endTime{
+    NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
+    [dateFormatter setDateFormat:@"yyyyMMddHHmmssSSS"];
+    NSDate* startTimeData = [dateFormatter dateFromString:startTime];
+    NSTimeInterval startTimeSp=[startTimeData timeIntervalSince1970]*1000;// *1000 是精确到毫秒，不乘就是精确到秒
+    NSDate* endTimeData = [dateFormatter dateFromString:endTime];
+    NSTimeInterval endTimeSp=[endTimeData timeIntervalSince1970]*1000;
+    double difference = (endTimeSp - startTimeSp);
+    //    self.serviceTotalTime += difference/1000;//云端时间
+    //    NSString * differenceStr = [NSString stringWithFormat:@"%.3f",difference/1000];
+    NSLog(@"开始时间：%@，结束时间：%@",startTime,endTime);
+    return difference;
+    
 }
 @end

@@ -22,11 +22,17 @@
     // Do any additional setup after loading the view.
     [self loadData:@"hello" other:@"hahhaha"];
     [self creatBtn];
+    
 }
 
 - (void)loadData:(NSString *)string other:(NSString *)string2
 {
-    
+    [self.delegate commonProtocolMethod];
+    NSString * nameString =  [self.delegate getClassInstance];
+    NSLog(@"nameString:%@",nameString);
+    [self.delegate getDateWithComplete:^(NSString * _Nonnull message) {
+        NSLog(@"message:%@",message);
+    }];
 }
 
 
@@ -84,5 +90,7 @@
     // Pass the selected object to the new view controller.
 }
 */
+
+
 
 @end

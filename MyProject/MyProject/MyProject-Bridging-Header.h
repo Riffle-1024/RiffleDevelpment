@@ -7,4 +7,6 @@
 #import "TimerTarget.h"
 #import "UIColor+Hex.h"
 #import "HeadView.h"
+#import "XibShowView.h"
+#import "CollectionViewCell.h"
 

@@ -16,7 +16,7 @@ static CGFloat kSpace = 10;
 static CGFloat kCollectionItemHeight;
 static CGSize kCollectionItemSize;
 
-@interface HomeViewController ()<UITableViewDelegate,UITableViewDataSource,UICollectionViewDelegate,UICollectionViewDataSource>
+@interface HomeViewController ()<UITableViewDelegate,UITableViewDataSource,UICollectionViewDelegate,UICollectionViewDataSource,CommonProtocol>
 
 @property(nonatomic,strong) UICollectionView * collectionView;
 
@@ -42,13 +42,13 @@ static CGSize kCollectionItemSize;
 
 - (void)viewDidLoad {
 //    [super viewDidLoad];
-//    UIButton * nextBtn = [[UIButton alloc] initWithFrame:CGRectMake(100, 100, 100, 30)];
-//    [nextBtn addTarget:self action:@selector(nextVC) forControlEvents:UIControlEventTouchUpInside];
-//    nextBtn.backgroundColor = [UIColor redColor];
-//    [self.view addSubview:nextBtn];
+    UIButton * nextBtn = [[UIButton alloc] initWithFrame:CGRectMake(100, 100, 100, 30)];
+    [nextBtn addTarget:self action:@selector(nextVC) forControlEvents:UIControlEventTouchUpInside];
+    nextBtn.backgroundColor = [UIColor redColor];
+    [self.view addSubview:nextBtn];
     // Do any additional setup after loading the view.
-    [self showHeaderView];
-    [self.tableView reloadData];
+//    [self showHeaderView];
+//    [self.tableView reloadData];
 //    [self showCollectionViewHeaderView];
 //    [self.collectionView reloadData];
     
@@ -130,6 +130,7 @@ static CGSize kCollectionItemSize;
 {
     
     MainViewController * homeVC = [[MainViewController alloc] init];
+    homeVC.delegate = self;
     [self.navigationController pushViewController:homeVC animated:YES];
 }
 
@@ -182,8 +183,21 @@ static CGSize kCollectionItemSize;
         return cell;
     }
    
-    
+
   
    
+}
+
+-(void)commonProtocolMethod{
+    NSLog(@"commonProtocolMethod");
+}
+
+-(NSString *)getClassInstance{
+    return NSStringFromClass([self class]);
+}
+
+-(void)getDateWithComplete:(void (^)(NSString * _Nonnull))comPlete
+{
+    comPlete(@"hello");
 }
 @end

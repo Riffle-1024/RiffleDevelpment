@@ -36,8 +36,8 @@ class MessageViewController: RIffleBaseViewController, UITableViewDelegate, UITa
 //        tableView?.reloadData()
 //        creatObjcHeadView()
 //        creatHeadView()
-        creatPathHeadView()
-        
+//        creatPathHeadView()
+        self.showXibView()
     }
     /*
      headView.firstWaveColor=kHexColor(@"398AE5", 1.0);
@@ -48,6 +48,13 @@ class MessageViewController: RIffleBaseViewController, UITableViewDelegate, UITa
      headView.period=2;
  //    [self.view addSubview:headView];
      [headView startWave];*/
+    
+    
+    //[[[NSBundle mainBundle] loadNibNamed:@"XibShowView" owner:self options:nil] lastObject];
+    func showXibView() {
+        let xibView:XibShowView = Bundle.main.loadNibNamed("XibShowView", owner: self, options: nil)?.last as! XibShowView
+        self.view.addSubview(xibView)
+    }
     
     func creatHeadView() {
         let headView = SwiftHeadView.init(frame: CGRect(x: 50, y: 120, width: 280, height: 280))
